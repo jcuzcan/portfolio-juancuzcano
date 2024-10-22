@@ -1,0 +1,38 @@
+.project-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto; /* Maintains aspect ratio */
+  }
+  
+  .chat-container {
+    position: fixed; /* Makes the container fixed in the viewport */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset the center point to the middle */
+    width: 400px; /* Set a fixed width for the chatbot */
+    max-width: 90%; /* Allow some responsiveness */
+    background-color: #fff; /* Background color */
+    border: 1px solid #ccc; /* Border for the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 16px; /* Inner spacing */
+    z-index: 1000; /* Bring it above other elements */
+  }
+  
+  .messages {
+    max-height: 300px; /* Set max height for the message area */
+    overflow-y: auto; /* Allow scrolling if messages exceed height */
+  }
+  
+  .user-message {
+    text-align: right; /* Align user messages to the right */
+    margin: 8px 0; /* Spacing between messages */
+  }
+  
+  .bot-message {
+    text-align: left; /* Align bot messages to the left */
+    margin: 8px 0; /* Spacing between messages */
+  }
+  
